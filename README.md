@@ -21,9 +21,3 @@ Feel free to explore the code and experiment with the notebooks and scripts. If 
 *Happy coding!*
 
 ---
-
-## Contact
-
-[Your Name or GitHub Username]  
-Email: [Your Email] (optional)  
-GitHub: https://github.com/your-github-username  
