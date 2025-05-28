@@ -1,9 +1,12 @@
-path: D:\ProgramFiles\Python\YOLO_DL\traffic_dataset
-train: train\images
-val: validation\images
 
+path: C:/Users/pandu/Pictures/traffic_dataset  # update this to your own dataset's root path
+train: images/train
+val: images/val
+test: images/test  
+
+# Classes
 names:
   0: Person
   1: Car
-  2: Traffic light
-  3: Stop sign
+  2: Traffic Light
+  3: Stop Sign
