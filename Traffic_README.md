@@ -24,16 +24,3 @@ Each image must have a corresponding `.txt` file in the `labels/` folder, format
 `<class_id> <x_center> <y_center> <width> <height>` — all values must be **normalized (0 to 1)**.
 
 ---
-
-## ⚙️ traffic_config.yaml
-
-```yaml
-path: C:/Users/pandu/Pictures/traffic_dataset  # update this to your dataset's root path
-train: images/train
-val: images/val
-test: images/test  
-names:
-  0: Person
-  1: Car
-  2: Traffic Light
-  3: Stop Sign
