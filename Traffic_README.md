@@ -1,46 +1,39 @@
 # 🚦 Traffic Object Detection with YOLOv8
 
-This project implements object detection on traffic-related objects using the YOLOv8 model by Ultralytics. The dataset contains four classes:
-
-- `person`
-- `car`
-- `traffic light`
-- `stop sign`
+This project demonstrates how to train a custom YOLOv8 model to detect traffic-related objects: **Person, Car, Traffic Light, and Stop Sign** using the Ultralytics `yolov8` library.
 
 ---
 
-## 📁 Dataset Structure
-
+## 📁 Dataset Structure  
 Make sure your dataset is arranged in the following structure:
 
+<pre>
 traffic_dataset/
 ├── images/
-│ ├── train/
-│ ├── val/
-│ └── test/ 
+│   ├── train/
+│   ├── val/
+│   └── test/              
 ├── labels/
-│ ├── train/
-│ ├── val/
-│ └── test/
+│   ├── train/
+│   ├── val/
+│   └── test/              
 └── traffic_config.yaml
+</pre>
 
-
-Each image must have a corresponding `.txt` file in the `labels/` folder, formatted in YOLO format:  
-`<class_id> <x_center> <y_center> <width> <height>` — all normalized (0 to 1).
+Each image must have a corresponding `.txt` file in the `labels/` folder, formatted in **YOLO format**:  
+`<class_id> <x_center> <y_center> <width> <height>` — all values must be **normalized (0 to 1)**.
 
 ---
 
-## 📝 Dataset Config (`traffic_config.yaml`)
+## ⚙️ traffic_config.yaml
 
 ```yaml
-path: C:/Users/pandu/Pictures/traffic_dataset  # Update this to the root of your dataset
-
+path: C:/Users/pandu/Pictures/traffic_dataset  # update this to your dataset's root path
 train: images/train
 val: images/val
-test: images/test  # Optional
-
+test: images/test  # optional
 names:
-  0: person
-  1: car
-  2: traffic light
-  3: stop sign
+  0: Person
+  1: Car
+  2: Traffic Light
+  3: Stop Sign
