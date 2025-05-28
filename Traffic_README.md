@@ -24,7 +24,3 @@ Each image must have a corresponding `.txt` file in the `labels/` folder, format
 `<class_id> <x_center> <y_center> <width> <height>` — all values must be **normalized (0 to 1)**.
 
 ---
-
-Installation of required libraries:
-
-pip install ultralytics opencv-python
