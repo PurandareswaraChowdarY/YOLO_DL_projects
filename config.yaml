@@ -1,0 +1,9 @@
+path: D:\ProgramFiles\Python\YOLO_DL\traffic_dataset
+train: train\images
+val: validation\images
+
+names:
+  0: Person
+  1: Car
+  2: Traffic light
+  3: Stop sign
