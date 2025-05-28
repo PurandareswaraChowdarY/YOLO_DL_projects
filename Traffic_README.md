@@ -31,7 +31,7 @@ Each image must have a corresponding `.txt` file in the `labels/` folder, format
 path: C:/Users/pandu/Pictures/traffic_dataset  # update this to your dataset's root path
 train: images/train
 val: images/val
-test: images/test  # optional
+test: images/test  
 names:
   0: Person
   1: Car
